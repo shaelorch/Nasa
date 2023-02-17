@@ -1,50 +1,11 @@
 .container {
   padding: 0 2rem;
   background-image: url('/space.jpeg');
-
 }
-
-.topBar {
-  display: flex;
-  position:fixed;
-  background: rgb(255,255,255);
-  background: linear-gradient(0deg, rgba(255,255,255,0)
-   0%, rgba(0,0,0,1) 38%); 
-  width:100%;
-  left:0;
-  z-index: 1;
-}
-
-.earthCont {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  margin-bottom:100px;
-}
-
-.button {
-  background-color: transparent;
-  border: 1px solid white;
-  border-radius: 10px;
-  padding:8px;
-}
-
-.button:hover {
-  background-color: #0b3d91;
-  color:white;
-  font-weight: bold;
-  border: 1px solid #0b3d91;
-  border-radius: 10px;
-  padding:8px;
-}
-
-
 
 .main {
   min-height: 100vh;
-  padding: 6rem 0 ;
+  padding: 4rem 0;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -56,53 +17,16 @@
 .poly {
   font-weight: bold;
   font-size: 50px;
-  padding-top:30px;
+  padding-top:100px;
 }
 
 .poly:hover {
   font-weight: bold;
   font-size: 50px;
   color: #0b3d91;
-  animation-duration: 4s;
-  animation-name: fadein;
 }
 
-@keyframes fadein {
-  0%   {color:red; left:0px; top:0px;}
-  25%  {color:#0b3d91; left:200px; top:0px;}
-  50%  {color:red; left:200px; top:200px;}
-  75%  {color:#0b3d91; left:0px; top:200px;}
-  100% {color:red; left:0px; top:0px;}
-}
-
-.floating:hover { 
-  animation-name: floating;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
- 
-}
-
-@keyframes floating {
-  0% { transform: translate(0,  0px); }
-  50%  { transform: translate(0, 15px); }
-  100%   { transform: translate(0, -0px); }   
-}
-
-.float { 
-  animation-name: floating;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-  margin-bottom:20px;
- 
-}
-
-@keyframes float {
-  0% { transform: translate(0,  0px); }
-  50%  { transform: translate(0, 5px); }
-  100%   { transform: translate(0, -0px); }   
-}
+.imgcont
 
 .footer {
   display: flex;

@@ -12,7 +12,6 @@
    0%, rgba(0,0,0,1) 38%); 
   width:100%;
   left:0;
-  z-index: 1;
 }
 
 .earthCont {
@@ -94,7 +93,7 @@
   animation-duration: 5s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
-  margin-bottom:20px;
+  margin-bottom:10px;
  
 }
 

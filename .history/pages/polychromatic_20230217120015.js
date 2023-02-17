@@ -63,17 +63,13 @@ export default function Polychromatic() {
     return (
         <><div className={styles.container}>
             <div className={styles.topBar} >
-                <Link href='/'>
-                    <img  src="nasa-logo.svg"/>
-                    
-                </Link>
+                            <img  src="nasa-logo.svg"/>
             </div>
-                
         <div className={styles.main}>
 
             <div className={styles.earthCont}>
                 <h1 style={{fontSize:40}}>Polychromatic Earth</h1>
-            <Image  className={styles.float} src={image} alt={image} width={200} height={200}/>
+            <Image style={{margin:'4%'}} src={image} alt={image} width={200} height={200}/>
             <div>{time}</div>
             <div>{coords[0]}, {coords[1]}</div>
             
@@ -101,8 +97,7 @@ export default function Polychromatic() {
                                     <td>{e.coords.lon}</td>
                                     <td><Image src={e.image} alt={i} width={100} height={100}/></td>
                                     <td>
-                                        <button className={styles.button}
-                                        onClick={() => {
+                                        <button onClick={() => {
                                             setImage(e.image);
                                             setTime(e.time);
                                             setCoords([e.coords.lat, e.coords.lon])
@@ -117,10 +112,6 @@ export default function Polychromatic() {
                 </tbody>
             </table>
         </div> 
-
-        <footer className={styles.footer}>
-            &copy; Shae Lorch 2023
-        </footer>
         </div></>
     )
 }

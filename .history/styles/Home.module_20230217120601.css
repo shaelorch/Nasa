@@ -12,7 +12,6 @@
    0%, rgba(0,0,0,1) 38%); 
   width:100%;
   left:0;
-  z-index: 1;
 }
 
 .earthCont {
@@ -86,21 +85,6 @@
 @keyframes floating {
   0% { transform: translate(0,  0px); }
   50%  { transform: translate(0, 15px); }
-  100%   { transform: translate(0, -0px); }   
-}
-
-.float { 
-  animation-name: floating;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-  margin-bottom:20px;
- 
-}
-
-@keyframes float {
-  0% { transform: translate(0,  0px); }
-  50%  { transform: translate(0, 5px); }
   100%   { transform: translate(0, -0px); }   
 }
 

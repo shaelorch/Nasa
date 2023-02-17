@@ -12,7 +12,6 @@
    0%, rgba(0,0,0,1) 38%); 
   width:100%;
   left:0;
-  z-index: 1;
 }
 
 .earthCont {
@@ -32,10 +31,8 @@
 }
 
 .button:hover {
-  background-color: #0b3d91;
-  color:white;
-  font-weight: bold;
-  border: 1px solid #0b3d91;
+  background-color: white;
+  border: 1px solid white;
   border-radius: 10px;
   padding:8px;
 }
@@ -86,21 +83,6 @@
 @keyframes floating {
   0% { transform: translate(0,  0px); }
   50%  { transform: translate(0, 15px); }
-  100%   { transform: translate(0, -0px); }   
-}
-
-.float { 
-  animation-name: floating;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-  margin-bottom:20px;
- 
-}
-
-@keyframes float {
-  0% { transform: translate(0,  0px); }
-  50%  { transform: translate(0, 5px); }
   100%   { transform: translate(0, -0px); }   
 }
 

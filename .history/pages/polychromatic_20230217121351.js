@@ -63,12 +63,8 @@ export default function Polychromatic() {
     return (
         <><div className={styles.container}>
             <div className={styles.topBar} >
-                <Link href='/'>
-                    <img  src="nasa-logo.svg"/>
-                    
-                </Link>
+                            <img  src="nasa-logo.svg"/>
             </div>
-                
         <div className={styles.main}>
 
             <div className={styles.earthCont}>
@@ -118,7 +114,7 @@ export default function Polychromatic() {
             </table>
         </div> 
 
-        <footer className={styles.footer}>
+        <footer>
             &copy; Shae Lorch 2023
         </footer>
         </div></>
